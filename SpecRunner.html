@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+    body {
+        background: rgba(231, 231, 231, 0.43);
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+    }
+    .brick {
+        padding: 5px 5px;
+        width: 225px;
+        background: white;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+        border-radius: 3px;
+        color: #333;
+        border: none;
+    }
+    .brick img {
+        border: 5px solid black;
+        margin: 0;
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+    /* when hovering over a not selected image add a dotted border to show
+       it can be selected as a favourite */
+    .brick:not(.selected) img:hover {
+        border: 5px dotted plum;
+    }
+    /* this class added when a picture is selected as a favourite */
+    .selected img {
+        border: 5px solid red;
+    }
+    .free-wall {
+        margin: 15px;
+    }
+</style>
+
+<title>Sainsbury&#39;s coding test - Hamish Charles</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="lib/freewall.js"></script>
+<script type="text/javascript" src="js/consumeFlickrTest.js"></script>
+</head>
+<body>
+    <h3>Sainsbury&#39;s coding test - Hamish Charles</h3>
+    <div class="container-fluid free-wall" id="photos">
+    </div>
+</body>
+</html>
